@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title> 9 laba </title>
+        <script type="text/javascript" src="/static/main.js"></script>
+    </head>
+
+    <body>
+        <h1> Add new game </h1>
+        <form>
+            <div>
+                <input type="text" name="todo" id="todo">
+                <label for="todo">Name</label>
+            </div>
+            <input type="int" name="year" id="year">
+            <label for="year">Year</label>
+            <div>
+                <button>
+                    Add
+                </button>
+            </div>
+        </form>
+        <ul>
+            {% for game in games_list %}
+            <li>
+                <div>
+                    {{ game['name'] }}
+                    <div>
+                    {{ game['year'] }}
+                    </div>
+                    <input value="{{game['id']}}" onChange="updateGame(this)" name='ready' type="checkbox" {% if game.ready %} checked {% endif %}>
+                    <label for="ready">Done</label>
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

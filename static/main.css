@@ -2,7 +2,19 @@ ul {
     list-style-type: "💀"
 }
 li {
+    font-weight: 600;
     margin-bottom: 10px;
     border: solid red 1px;
     padding: 10px;
 }
+body {
+    background-color: #145690;
+  }
+#header{ 
+    width: 1016; 
+    height: 232;
+    background-color: #145690; 
+    margin-left: 20%;
+    margin-right: 20%;
+    background-image: url(images/lin.png)
+    } 

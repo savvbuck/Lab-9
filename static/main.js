@@ -15,3 +15,8 @@ function createGame(){
         body: JSON.stringify({'name': name || 'Пустое', 'year': year || '0000', 'ready': false})
     })
 }
+function deleteGame(){
+    fetch('/game/clear', {
+        method: 'delete'
+    })
+}

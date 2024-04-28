@@ -60,6 +60,12 @@ def create_task():
     db.session.commit()
     return 'Ok'
 
+@app.route('/game/clear', methods=['DELETE'])
+def delete_task():
+    db.session.query(Game).delete()
+    db.session.commit()
+    return 'Ok'
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()

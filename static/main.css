@@ -17,4 +17,7 @@ body {
     margin-left: 20%;
     margin-right: 20%;
     background-image: url(images/lin.png)
-    } 
+    }
+h1 {
+    font-style: italic;
+}

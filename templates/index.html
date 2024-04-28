@@ -2,19 +2,20 @@
     <head>
         <title> 9 laba </title>
         <script type="text/javascript" src="/static/main.js"></script>
+        <link href="/static/main.css" rel="stylesheet">
     </head>
 
     <body>
         <h1> Add new game </h1>
         <form>
             <div>
-                <input type="text" name="todo" id="todo">
-                <label for="todo">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="name">Name</label>
             </div>
-            <input type="int" name="year" id="year">
+            <input type="text" name="year" id="year">
             <label for="year">Year</label>
             <div>
-                <button>
+                <button onClick="createGame()">
                     Add
                 </button>
             </div>

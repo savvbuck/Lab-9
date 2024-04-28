@@ -6,7 +6,7 @@ function updateGame(el){
         body: JSON.stringify({'ready': el.checked})
     })
 }
-function createGame(el){
+function createGame(){
     let name = document.getElementById('name').value
     let year = document.getElementById('year').value
     fetch('/game', {
